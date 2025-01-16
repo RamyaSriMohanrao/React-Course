@@ -1,0 +1,69 @@
+{
+    "info": {
+        "id": "681189",
+        "name": "GLOBO Ice Creams Of The World",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/5/28/c83a3f4b-688c-4eb3-a4a1-9539053221f1_681189.JPG",
+        "locality": "6TH BLOCK",
+        "areaName": "Koramangala",
+        "costForTwo": "₹150 for two",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts",
+            "Bakery"
+        ],
+        "avgRating": 4.3,
+        "parentId": "22303",
+        "avgRatingString": "4.3",
+        "totalRatingsString": "35",
+        "sla": {
+            "deliveryTime": 25,
+            "lastMileTravel": 0.5,
+            "serviceability": "SERVICEABLE",
+            "slaString": "20-30 mins",
+            "lastMileTravelString": "0.5 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-12-03 02:00:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "₹125 OFF",
+            "subHeader": "ABOVE ₹299",
+            "discountTag": "FLAT DEAL"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {
+        "context": "seo-data-d985e93f-e220-43e5-a2b6-7f8fa13989da"
+    },
+    "cta": {
+        "link": "https://www.swiggy.com/city/bangalore/globo-ice-creams-of-the-world-6th-block-koramangala-rest681189",
+        "type": "WEBLINK"
+    }
+}
