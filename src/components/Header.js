@@ -24,7 +24,7 @@ const Header = () => {
                 <img className = "w-28" src={require("../../img/—Pngtree—cartoon restaurant cooking delicious food_6939398.png")}/>
             </div>
             <div className="flex items-center">
-                <ul className="flex p-4 m-4">
+                <ul className="flex p-4 m-3">
                     <li className="px-4">Online Status : {onlineStatus ? "🟢" : "🔴"}</li>
                     <li className="px-4">
                         <Link to="/">Home</Link>
