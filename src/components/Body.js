@@ -48,14 +48,14 @@ const Body = () =>{
                 <input 
                   type = "text" 
                   data-testid = "searchInput"
-                  className = "border border-solid border-black " 
+                  className = "border-b-2 border-b-black outline-none " 
                   value = {searchText}
                   onChange={(e) => {
                     setSearchText(e.target.value);
                  }}
                 />
 
-                <button className="px-4 my-2 bg bg-yellow-100 m-4 rounded-lg hover:scale-105 hover:bg-yellow-200"
+                <button className="px-4 py-2 my-2 bg bg-yellow-100 m-4 rounded-lg hover:scale-105 hover:bg-yellow-200"
                   onClick={() =>{
                   console.log(searchText);
 
@@ -68,7 +68,7 @@ const Body = () =>{
               </div>
               <div  className="search m-4 p-4 flex items-center">
                 <button 
-                  className="px-4 py-2 bg-amber-100 rounded-lg hover:scale-105 hover:bg-yellow-200" 
+                  className="absolute right-0 px-4 py-3 m-20 bg-amber-100 rounded-lg hover:scale-105 hover:bg-yellow-200" 
                   onClick={() => {
                     const filterList = ListOfRestaurants.filter((res)=>res.info.avgRating > 4.5);
                     console.log(filterList);
@@ -85,7 +85,7 @@ const Body = () =>{
                   />
               </div> */}
             </div>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap m-6">
                 {
                   filteredRestaurants?.map((restaurant) => (
                     <Link 

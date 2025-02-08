@@ -27,9 +27,9 @@ class About extends React.Component{
                         }}
                     </UserContext.Consumer>
                 </div> */}
-                <div className="border border-yellow-500 p-3 mx-6 my-10 bg-yellow-100">
-                    <h2 className="p-4 m-4 text-3xl italic">Welcome to Foodie🤤! We’re here to transform the way you enjoy your favorite meals.</h2>
-                    <h3 className="p-4 m-4 text-3xl italic"> <strong>Our mission is simple: </strong>To bring delicious, fresh, and quality food straight to your doorstep with just a few clicks.</h3>
+                <div className="border border-yellow-500 p-3 mx-6 my-10 bg-yellow-100 ">
+                    <h2 className="p-8 m-8 text-3xl italic">Welcome!! We’re here to transform the way you enjoy your favorite meals.</h2>
+                    <h3 className="p-10 m-10 text-3xl italic"> <strong>Our mission is simple: </strong>To bring delicious, fresh, and quality food straight to your doorstep with just a few clicks.</h3>
                 </div>
                 
                 {/* <UserClass name = {"First"} location = {"TVR"}/> */}

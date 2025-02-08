@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
-import logoImg from '../../img/—Pngtree—cartoon restaurant cooking delicious food_6939398.png';
+// import logoImg from '../../img/—Pngtree—cartoon restaurant cooking delicious food_6939398.png';
 
 const Header = () => {
     const [btnNameReact, setBtnNameReact] = useState("Login");
@@ -21,7 +21,7 @@ const Header = () => {
     return(
         <div className="flex justify-between bg-pink-200 shadow-lg mt-1 sm:bg-green-200 lg:bg-amber-200">
             <div className = "logo-contaier">
-                <img className = "w-28" src={logoImg}/>
+                <img className = "w-28" src={require("../../img/—Pngtree—cartoon restaurant cooking delicious food_6939398.png")}/>
             </div>
             <div className="flex items-center">
                 <ul className="flex p-4 m-4">
@@ -33,7 +33,7 @@ const Header = () => {
                         <Link to="/About">About Us</Link>
                     </li>
                     <li className="px-4">
-                        <Link to = "/Contact">Contact Us</Link>
+                        <Link to = "/Contact">Feedback</Link>
                     </li>
                     {/* <li className="px-4">
                         <Link to = "/Grocery">Grocery</Link>

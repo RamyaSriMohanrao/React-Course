@@ -1,14 +1,23 @@
 import { useDispatch } from "react-redux";
 import { CDN_URL } from "../utils/constants";
 import { addItem } from "../utils/cartSlice";
+import { useState } from "react";
+import Notification from "./Notification";
 
-const CategoryList = ({items}) => {
-    // console.log(items)
+const CategoryList = ({ items }) => {
+    const [showNotification, setShowNotification] = useState(null);
+    
     const dispatch = useDispatch();
 
+    const handleClick = (itemId, item) => {
+        dispatch(addItem(item));  
 
-    const handleAddItem = (item) => {
-        dispatch(addItem(item));  // Redux take this as a second argument and it will create a object like{Payload:"Pizza"}, it will take this object a nd pass it as 2nd arg in cartslice(addItem()) 
+        setShowNotification(itemId);
+
+        setTimeout(() => {
+            setShowNotification(null); // Hide after 2 seconds
+        }, 2000);
+        
     };
 
 
@@ -34,9 +43,14 @@ const CategoryList = ({items}) => {
                             <button 
                                 id="addButton"
                                 className="p-2 mx-12 rounded-lg bg-black text-white shadow-lg" 
-                                onClick = {() => handleAddItem(item)}>
+                                onClick = {() => handleClick(item?.card?.info?.id, item)} >
                                 Add +
                             </button>
+                            {showNotification === item?.card?.info?.id && (
+                                <div className="absolute left-full ml-2 px-3 py-1 bg-green-500 text-white rounded-lg shadow-md transition-opacity duration-500 whitespace-nowrap">
+                                    Item added to the cart.
+                                </div>
+                            )}
                         </div>
                         <div>
                             <img src = {CDN_URL + item?.card?.info?.imageId} className="w-full" />
